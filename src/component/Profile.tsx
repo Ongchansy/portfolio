@@ -2,11 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Profile = () => {
+const Profile = () => { 
   return (
     <>
-        <div className='flex flex-col  items-center justify-center '>
-            <Image src="/assets/images/Profile.png" height={150} width={150}  alt='profile' style={{height:150}} className='border bg-gray-50 border-b-fuchsia-50  rounded-full'/>
+        <div className='flex flex-col items-center justify-center '>
+            <Image src="/assets/images/profile.png" height={150} width={150}  alt='profile' style={{height:150, width: 150}} className='border z-10 bg-gray-50 border-b-fuchsia-50  rounded-full'/>
         </div>
 
         <h3 className='text-lg text-title font-medium mt-[31px] text-center'>Ong Chansy</h3>
