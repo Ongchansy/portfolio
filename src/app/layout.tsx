@@ -37,15 +37,6 @@ export const metadata: Metadata = {
     name: "Ong Chansy"
   },
   description: "Web development portfolio, Nextjs Tailwindcss",
-  openGraph:{
-    title: "ONG CHANSY",
-    description: "This is my cv as a front-end developer",
-    images: [
-      {
-        url: "http://localhost:3000/api/og"
-      }
-    ]
-  }
 };
 
 
