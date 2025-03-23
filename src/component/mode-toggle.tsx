@@ -14,16 +14,17 @@ export function ModeToggle() {
   }, [])
 
   if (!mounted) {
-    return <Button variant="outline" size="icon" aria-label="Loading theme..." />
+    return <Button variant="outline" size="default" aria-label="Loading theme..." />
   }
 
   return (
-    <Button variant="outline" size="icon" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+    <Button  className="w-full bg-yellow-100 rounded-none hover:bg-yellow-600"  onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
       {theme === "light" ? (
-        <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />
+        <Moon className=" transition-all"/>
       ) : (
-        <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />
+        <Sun className=" transition-all"/>
       )}
+      {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
     </Button>
   )
 }

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/component/theme-provider";
 import localFont from 'next/font/local';
-import SideNavigation from "@/component/common/SideNavigation";
 import RightSidebar from "@/component/common/RightSidebar";
 
 
@@ -57,17 +56,17 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <div className="relative flex ">
-              <aside className="fixed left-0 top-0 h-screen overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
+              <aside className="md:fixed  hidden md:block left-0 top-0 h-screen md:overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
                 <RightSidebar />
               </aside>
 
-              <main className="flex-1 ml-[305px] mr-[108px] h-screen overflow-y-auto p-8">
+              <main className="md:flex-1 md:ml-[305px] md:h-screen md:overflow-y-auto px-8">
                 {children}
               </main>
 
-              <aside className="fixed flex flex-col items-center right-0 top-0 h-screen w-[108px] bg-primary-background shadow-2xs px-5 pt-12">
+              {/* <aside className="fixed hidden md:flex flex-col items-center right-0 top-0 h-screen w-[108px] bg-primary-background shadow-2xs px-5 pt-12">
                 <SideNavigation />
-              </aside>
+              </aside> */}
             </div>
           </ThemeProvider>
       </body>

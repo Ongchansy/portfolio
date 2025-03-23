@@ -5,9 +5,9 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-      <div className="bg-primary-background  grid grid-cols-2">
-        <div className="justify-self-end self-center pl-32">
-          <h1 className="text-[48px] mb-[18px] leading-[59px] font-bold text-title">I’m Rayan Adlrdard <br /> <span className="text-yellow-100">Front-end</span> Developer</h1>
+      <div className="bg-primary-background  grid grid-cols-1 lg:grid-cols-2">
+        <div className="justify-self-end self-center md:pl-32">
+          <h1 className="text-[4.8rem] mb-[18px] leading-[59px] font-bold text-title ">I’m Rayan Adlrdard <br /> <span className="text-yellow-100">Front-end</span> Developer</h1>
           <p className="mb-[25px] ">
           I am currently in my fourth year of studying Computer Science at Phnom Penh International University (PPIU). Alongside my academic pursuits, I have been gaining hands-on experience in web development, specializing in React.js/nextjs for front-end development and working with frameworks like Bootstrap and Tailwind CSS.
           </p>
