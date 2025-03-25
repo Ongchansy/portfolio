@@ -5,7 +5,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-      <div className="bg-primary-background  grid grid-cols-1 lg:grid-cols-2 px-8">
+      <div className="bg-primary-background  grid grid-cols-1 lg:grid-cols-2 px-8 py-16">
         <div className="justify-self-end self-center md:pl-32">
           <h1 className="text-[4.8rem] mb-[18px] leading-[59px] font-bold text-title ">I’m Ong Chansy<br /> <span className="text-yellow-100">Front-end</span> Developer</h1>
           <p className="mb-[25px] text-[1.6rem]">
@@ -17,10 +17,8 @@ const Hero = () => {
           </Button>
         </div>
         <div className="self-center justify-self-center">
-          <div className='relative '>
 
           <Image src={'/assets/images/my-profile.png'}  alt="my profile cv" height={459} width={325} className='min-h-[459px] min-w-[200px]'/>
-          </div>
         </div>
       </div>
     </>

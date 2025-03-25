@@ -7,8 +7,8 @@ const Service = () => {
         <div className='px-8'>
         <div className="flex flex-col justify-center items-center text-center">
             <h3 className="font-bold text-title text-[3.2rem] mb-[25px]">My Services</h3>
-            <p className="text-[1.5rem] w-[600px] mb-[50px]">
-                I specialize in building modern, scalable, and high-performance web applications.  
+            <p className="text-[1.5rem] min-w-[300px] mb-[50px]">
+                I specialize in building modern, scalable, and high-performance web applications. <br/>
                 From front-end design to back-end development, I create seamless digital experiences  
                 tailored to your business needs.
             </p>

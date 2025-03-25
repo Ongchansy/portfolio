@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/component/theme-provider";
 import localFont from 'next/font/local';
 import RightSidebar from "@/component/common/RightSidebar";
+import MobileHeader from "@/component/HeaderMobile";
 
 
 const Inter = localFont({
@@ -55,18 +56,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="relative flex">
-              <aside className="md:fixed  hidden lg:block left-0 top-0 h-screen lg:overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
+            <MobileHeader />
+            <div className="flex h-screen">
+              <aside className="md:fixed  hidden lg:block left-0 top-0 lg:overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
                 <RightSidebar />
               </aside>
 
-              <main className="lg:flex-1 lg:ml-[305px] lg:h-screen lg:overflow-y-auto lg:px-8">
+              <main className="lg:flex-1 lg:ml-[305px] overflow-y-auto lg:px-8">
                 {children}
               </main>
-
-              {/* <aside className="fixed hidden md:flex flex-col items-center right-0 top-0 h-screen w-[108px] bg-primary-background shadow-2xs px-5 pt-12">
-                <SideNavigation />
-              </aside> */}
             </div>
           </ThemeProvider>
       </body>
