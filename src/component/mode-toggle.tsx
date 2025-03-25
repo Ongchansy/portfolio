@@ -18,11 +18,11 @@ export function ModeToggle() {
   }
 
   return (
-    <Button  className="w-full bg-yellow-100 rounded-none hover:bg-yellow-600"  onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+    <Button variant="ghost"  className="w-full h-[30px] text-[1.2rem] bg-yellow-100 rounded-none hover:bg-yellow-600"  onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
       {theme === "light" ? (
-        <Moon className=" transition-all"/>
+        <Moon className=" transition-all" size={50}/>
       ) : (
-        <Sun className=" transition-all"/>
+        <Sun className=" transition-all" size={50}/>
       )}
       {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
     </Button>

@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <>
         <div className='flex flex-col items-center justify-center '>
-            <Image src="/assets/images/profile.png" height={150} width={150}  alt='profile' style={{height:150, width: 150}} className='border z-10 bg-gray-50 border-b-fuchsia-50  rounded-full'/>
+            <Image src="/assets/images/my-profile.png" height={150} width={150}  alt='profile' style={{height:150, width: 150}} className='border z-10 bg-gray-50 border-b-fuchsia-50  rounded-full'/>
         </div>
 
         <h3 className='text-[1.8rem] text-title font-medium mt-[31px] text-center'>Ong Chansy</h3>

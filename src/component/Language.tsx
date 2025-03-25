@@ -4,11 +4,11 @@ import { ProgressBar } from './common/ProgressBar'
 const Language = () => {
   return (
     <>
-        <h3 className='text-title font-medium test-[18px] mb-[15px]'>Languages</h3>
+        <h3 className='text-title font-medium text-[18px] mb-[15px]'>Languages</h3>
         
         <div className='flex flex-col gap-[12px]'>
             <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between text-[1.4rem]'>
                     <span>Khmer</span>
                     <span>100%</span>
                 </div>
@@ -16,7 +16,7 @@ const Language = () => {
             </div>
 
             <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center justify-between text-[1.4rem]'>
                     <span>English</span>
                     <span>70%</span>
                 </div>

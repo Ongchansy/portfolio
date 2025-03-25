@@ -55,12 +55,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="relative flex ">
-              <aside className="md:fixed  hidden md:block left-0 top-0 h-screen md:overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
+            <div className="relative flex">
+              <aside className="md:fixed  hidden lg:block left-0 top-0 h-screen lg:overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
                 <RightSidebar />
               </aside>
 
-              <main className="md:flex-1 md:ml-[305px] md:h-screen md:overflow-y-auto px-8">
+              <main className="lg:flex-1 lg:ml-[305px] lg:h-screen lg:overflow-y-auto lg:px-8">
                 {children}
               </main>
 
