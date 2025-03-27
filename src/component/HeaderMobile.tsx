@@ -20,8 +20,9 @@ export default function MobileHeader() {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
-    { name: "Tools", href: "#education" },
-    { name: "Timeline", href: "#timeline" },
+    { name: "Education", href: "#education" },
+    { name: "Timeline", href: "#worksTimeline" },
+    { name: "Tools", href: "#tools" },
     { name: "Contact", href: "#contact" },
   ]
 

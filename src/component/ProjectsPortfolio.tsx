@@ -25,60 +25,30 @@ const projects = [
   {
     id: 1,
     title: "E-commerce Platform",
-    description: "A full-stack e-commerce platform with payment integration and admin dashboard.",
-    image: "/assets/images/placeholder.svg?height=300&width=500",
+    description: "A front-end e-commerce platform with no integrate with dashboard only UI",
+    image: "/assets/images/ecommerce.png?height=300&width=500",
     category: "web",
-    tags: ["React", "Node.js", "MongoDB"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["React", "Tailwindcss"],
+    demoUrl: "https://minishop-snowy.vercel.app",
+    githubUrl: "https://gitlab.com/ongchansy13/minishop",
   },
   {
     id: 2,
-    title: "Mobile Fitness App",
-    description: "A fitness tracking app with workout plans and progress monitoring.",
-    image: "/assets/images/placeholder.svg?height=300&width=500",
-    category: "mobile",
-    tags: ["React Native", "Firebase"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
-  },
-  {
-    id: 3,
     title: "Data Visualization Dashboard",
     description: "Interactive dashboard for visualizing complex datasets.",
-    image: "/assets/images/placeholder.svg?height=300&width=500",
+    image: "/assets/images/admin.png?height=300&width=500",
     category: "data",
-    tags: ["D3.js", "Python", "Flask"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
+    tags: ["Nextjs", "Neon Postgres", "Shadcn","Prisma"],
+    demoUrl: "https://inventory-management-system-chi.vercel.app",
+    githubUrl: "https://github.com/Ongchansy/inventory-management",
   },
   {
     id: 4,
-    title: "AI Image Generator",
+    title: "AI Image Generator(Coming soon)",
     description: "An AI-powered image generation tool using machine learning models.",
     image: "/assets/images/placeholder.svg?height=300&width=500",
     category: "ai",
     tags: ["Python", "TensorFlow", "React"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
-  },
-  {
-    id: 5,
-    title: "Personal Blog",
-    description: "A responsive blog built with modern web technologies.",
-    image: "/assets/images/placeholder.svg?height=300&width=500",
-    category: "web",
-    tags: ["Next.js", "Tailwind CSS"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project",
-  },
-  {
-    id: 6,
-    title: "Inventory Management System",
-    description: "A system for tracking inventory and managing stock levels.",
-    image: "/assets/images/placeholder.svg?height=300&width=500",
-    category: "web",
-    tags: ["Vue.js", "Express", "PostgreSQL"],
     demoUrl: "https://example.com",
     githubUrl: "https://github.com/yourusername/project",
   },
@@ -126,10 +96,11 @@ export function ProjectsSection() {
     activeCategory === "all" ? projects : projects.filter((project) => project.category === activeCategory)
 
   return (
-    <section className="space-y-8 px-8">
+    <section className="space-y-8 px-8" id="projects">
+      <h1 className="text-[3.2rem] font-bold text-center text-title mb-12">My Portfolio</h1>
       <Tabs defaultValue="all" onValueChange={setActiveCategory} className="w-full">
         <div className="flex justify-center mb-24">
-          <TabsList className="grid grid-cols-5 gap-4">
+          <TabsList className="grid grid-cols-4 gap-4">
             {categories.map((category) => (
               <motion.div
                 key={category}

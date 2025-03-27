@@ -47,7 +47,7 @@ const ContactMe = () => {
       }
 
   return (
-    <div className="grid grid-cols-1  xl:grid-cols-2 gap-12 xl:container xl:mx-auto">
+    <div className="grid grid-cols-1  xl:grid-cols-2 gap-12 xl:container xl:mx-auto" id="contact">
         <div>
             <h3 className="text-[1.6rem] font-bold text-title mb-[1rem]">Leave us your info</h3>
             <div className="space-y-8 bg-primary-background p-8 rounded-lg shadow-md">
