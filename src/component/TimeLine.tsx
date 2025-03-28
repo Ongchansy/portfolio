@@ -46,7 +46,7 @@ const TimeLine = () => {
         },
       ]
   return (
-    <div className="mxl:container xl:mx-auto px-4 py-8 md:py-12" id='worksTimeline'>
+    <div className="mxl:container xl:mx-auto px-8 py-8 md:py-12" id='worksTimeline'>
       <h1 className="text-2xl text-[3.2rem] font-bold text-title text-center mb-8 md:mb-12">Company Timeline</h1>
       <div className="relative">
         {/* Center line - adjusted for mobile and desktop */}

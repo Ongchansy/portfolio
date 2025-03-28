@@ -28,16 +28,16 @@ export default function MobileHeader() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 h-16 bg-primary-background/80 backdrop-blur-md z-50 shadow-sm flex items-center justify-between px-4">
-        <div className="flex items-center">
-          <Sheet open={open} onOpenChange={setOpen}>
+      <header className="fixed top-0 left-0 right-0 h-24 text-[1.4rem]  bg-primary-background/80 backdrop-blur-md z-50 shadow-sm flex items-center justify-between px-8">
+        <div className="flex items-center ">
+          <Sheet open={open} onOpenChange={setOpen} >
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+                <Menu style={{width: 25, height:25}} />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[280px] sm:w-[280px]">
+            <SheetContent side="left" className="w-[280px] sm:w-[280px] overflow-auto pb-4">
               <SheetHeader className="text-left">
                 <SheetTitle></SheetTitle>
               </SheetHeader>
@@ -54,7 +54,7 @@ export default function MobileHeader() {
                 </Button>
               </div>
 
-              <nav className="flex-1 overflow-auto">
+              <nav className="flex-1 ">
                 <ul className="space-y-2">
                   {menuItems.map((item, index) => (
                     <motion.li
@@ -81,7 +81,7 @@ export default function MobileHeader() {
 
         <div className="flex items-center space-x-2">
           <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            {theme === "dark" ? <Sun  style={{width: 25, height:25}} /> : <Moon style={{width: 25, height:25}} />}
             <span className="sr-only">Toggle theme</span>
           </Button>
         </div>

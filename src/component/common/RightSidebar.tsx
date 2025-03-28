@@ -9,13 +9,13 @@ const RightSidebar = () => {
   return (
     <>
         <Profile />
-        <p className='w-[265px] h-[2px] bg-gray-300 my-[25px]' />
+        <p className='w-[310px] h-[2px] bg-gray-300 my-[25px]' />
         <AboutMe />
-        <p className='w-[265px] h-[2px] bg-gray-300 my-[25px]' />
+        <p className='w-[310px] h-[2px] bg-gray-300 my-[25px]' />
         <Language />
-        <p className='w-[265px] h-[2px] bg-gray-300 my-[25px]' />
+        <p className='w-[310px] h-[2px] bg-gray-300 my-[25px]' />
         <Skills />
-        <p className='w-[265px] h-[2px] bg-gray-300 my-[12px]' />
+        <p className='w-[310px] h-[2px] bg-gray-300 my-[12px]' />
         <ModeToggle />
     </>
   )

@@ -4,7 +4,7 @@ import { ProgressBar } from './common/ProgressBar'
 const Skills = () => {
   return (
     <>
-        <h3 className='text-title font-medium test-[18px] mb-[15px]'>Skills</h3>
+        <h3 className='text-title font-medium text-[18px] mb-[15px]'>Skills</h3>
         <div className='flex flex-col gap-[12px]'>
                     <div>
                         <div className='flex items-center justify-between text-[1.4rem]'>

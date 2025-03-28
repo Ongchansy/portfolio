@@ -56,16 +56,18 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+          <div >
             <MobileHeader />
-            <div className="flex h-screen">
-              <aside className="md:fixed  hidden lg:block left-0 top-0 lg:overflow-y-auto w-[305px] bg-primary-background shadow-2xs px-8 py-12 ">
+            <div className="h-screen">
+              <aside className="md:fixed  hidden lg:block h-screen left-0 top-0 overflow-y-auto w-[350px] bg-primary-background shadow-2xs px-8 pt-4 ">
                 <RightSidebar />
               </aside>
 
-              <main className="lg:flex-1 lg:ml-[305px] overflow-y-auto lg:px-8">
+              <main className="lg:flex-1 lg:ml-[350px] overflow-y-auto lg:px-8">
                 {children}
               </main>
             </div>
+          </div>
           </ThemeProvider>
       </body>
     </html>
