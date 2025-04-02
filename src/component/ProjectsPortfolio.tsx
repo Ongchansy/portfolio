@@ -43,6 +43,16 @@ const projects = [
     githubUrl: "https://github.com/Ongchansy/inventory-management",
   },
   {
+    id: 3,
+    title: "University Library Managment system",
+    description: "A full-stack Library Management system platform with with dashboard ",
+    image: "/assets/images/university-library.png?height=300&width=500",
+    category: "web",
+    tags: ["React", "Nextjs", "Tailwindcss","Neon","Drizzle ORM","Shadcn","NextAuth"],
+    demoUrl: "https://university-library-five-theta.vercel.app",
+    githubUrl: "https://github.com/Ongchansy/university-library",
+  },
+  {
     id: 4,
     title: "AI Image Generator(Coming soon)",
     description: "An AI-powered image generation tool using machine learning models.",
