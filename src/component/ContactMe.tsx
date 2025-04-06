@@ -41,8 +41,7 @@ const ContactMe = () => {
       })
 
       function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
+
         console.log(values)
       }
 
@@ -60,7 +59,7 @@ const ContactMe = () => {
                             <FormItem>
                             <FormLabel className="text-[1.8rem] font-medium">Your Full Name ( Required)</FormLabel>
                             <FormControl>
-                                <Input className="h-[50px] bg-[#F0F0F6]" {...field} />
+                                <Input className="h-[50px] text-2xl bg-[#F0F0F6]" {...field} />
                             </FormControl>
                             <FormMessage />
                             </FormItem>
@@ -73,7 +72,7 @@ const ContactMe = () => {
                             <FormItem>
                             <FormLabel className="text-[1.8rem] font-medium">Your Email ( Required)</FormLabel>
                             <FormControl>
-                                <Input className="h-[50px] bg-[#F0F0F6]" {...field} />
+                                <Input className="h-[50px] text-2xl bg-[#F0F0F6]" {...field} />
                             </FormControl>
                             <FormMessage />
                             </FormItem>
@@ -99,7 +98,7 @@ const ContactMe = () => {
                             <FormItem>
                             <FormLabel className="text-[1.8rem] font-medium">Your Message</FormLabel>
                             <FormControl>
-                                <Textarea className="resize-none text-[3rem] h-[210px] bg-[#F0F0F6]"  {...field} />
+                                <Textarea className="resize-none text-2xl h-[210px] bg-[#F0F0F6]"  {...field} />
                             </FormControl>
                             <FormMessage />
                             </FormItem>

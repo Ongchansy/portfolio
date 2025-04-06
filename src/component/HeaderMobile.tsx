@@ -45,10 +45,10 @@ export default function MobileHeader() {
               <div className="flex flex-col items-center py-6">
                 <Image src="/assets/images/my-profile.png" alt="John Doe" width={80} height={80} className="rounded-full mb-4" />
                 <h2 className="text-xl font-bold mb-1">Ong Chansy</h2>
-                <p className="text-sm text-muted-foreground mb-4">Front-End Web Developer</p>
+                <p className="text-sm text-muted-foreground mb-4">Web Developer</p>
 
                 <Button className="w-1/2 mb-2" asChild>
-                  <a href="/john-doe-cv.pdf" download onClick={() => setOpen(false)}>
+                  <a href="/assets/images/MyResume.pdf" download onClick={() => setOpen(false)}>
                     <Download className="mr-2 h-4 w-4" /> Download CV
                   </a>
                 </Button>
@@ -76,7 +76,7 @@ export default function MobileHeader() {
               </nav>
             </SheetContent>
           </Sheet>
-          <h1 className="ml-2 font-bold">Ong Chansy</h1>
+          <h1 className="ml-6 font-bold">Ong Chansy</h1>
         </div>
 
         <div className="flex items-center space-x-2">

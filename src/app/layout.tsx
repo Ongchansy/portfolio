@@ -36,6 +36,10 @@ export const metadata: Metadata = {
   authors: {
     name: "Ong Chansy"
   },
+  icons: {
+    icon: "/assets/images/my-profile.png",
+    shortcut: "/assets/images/my-profile.png",
+  },
   description: "Web development portfolio, Nextjs Tailwindcss",
 };
 

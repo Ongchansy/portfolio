@@ -13,10 +13,10 @@ const Service = () => {
                 tailored to your business needs.
             </p>
         </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2  gap-4'>
                 <div className='w-full flex flex-col items-center justify-center h-[250px] bg-primary-background'>
                     <Image src={'/assets/images/coding.png'} alt='coding, web development' height={68} width={68} />
-                    <span className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>web development</span>
+                    <span className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>Web Development</span>
                     <span className='text-center'>Blog, E-commerce</span>
                 </div>
                 <div className='w-full flex flex-col items-center justify-center h-[250px] bg-primary-background'>
@@ -26,22 +26,13 @@ const Service = () => {
                 </div>
                 <div className='w-full flex flex-col items-center justify-center h-[250px] bg-primary-background'>
                     <Image src={'/assets/images/Microphone.png'} alt='coding, web development' height={68} width={68} />
-                    <span className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>Sound Design</span>
-                    <span className='text-center'>Voice Over, Beat Making</span>
+                    <span className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>Content Creator</span>
+                    <span className='text-center'>Educatin, Learning, Video Code meme</span>
                 </div>
-                <div className='w-full flex flex-col items-center justify-center h-[250px] bg-primary-background'>
-                    <Image src={'/assets/images/game-development.png'} alt='coding, web development' height={68} width={68} />
-                    <span className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>Game Design</span>
-                    <span className='text-center'>Character Design, Props & Objects</span>
-                </div>
-                <div className='w-full flex flex-col items-center justify-center h-[250px] bg-primary-background'>
-                    <Image src={'/assets/images/Photographer.png'} alt='coding, web development' height={68} width={68} />
-                    <span className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>Photography</span>
-                    <span className='text-center'>portrait, product photography</span>
-                </div>
+
                 <div className='w-full px-[25px] flex flex-col items-center justify-center h-[250px] bg-primary-background'>
-                    <h6 className='mb-[23px]  text-center'>Advertising</h6>
-                    <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. </p>
+                    <h6 className='mt-[23px] text-center mb-[15px] text-title text-[18px] font-medium'>Advertising</h6>
+                    <p className='text-center'>..</p>
                 </div>
             </div>
         </div>

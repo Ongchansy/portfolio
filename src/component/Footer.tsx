@@ -73,7 +73,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#timeline" className=" hover:text-primary transition-colors">
+                  <a href="#worksTimeline" className=" hover:text-primary transition-colors">
                     Timeline
                   </a>
                 </li>
@@ -102,11 +102,11 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center">
                   <MapPin size={16} className="mr-2 text-primary" />
-                  <span className="">Phnom Penh,TK Avenue Mall</span>
+                  <span className="">Phnom Penh, Steng Mean Chey</span>
                 </li>
                 <li className="mt-4">
                   <Button variant="outline" size="sm" asChild>
-                    <a href="/john-doe-cv.pdf" download>
+                    <a href="/assets/images/MyResume.pdf" download>
                       Download CV
                     </a>
                   </Button>
